@@ -5,17 +5,26 @@
  */
 package checkingaccount;
 
+import java.util.Scanner;
+
 /**
  *
  * @author 4800590195
  */
 public class CheckingAccount {
 
+    private double balance, fee;
+
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner computerKeyboardInput = new Scanner(System.in);
+        System.out.println("Checking Account by Kevin Bell\n");
+        Account checking;
+        checking = new Account();
+        checking.
     }
-    
+
 }
