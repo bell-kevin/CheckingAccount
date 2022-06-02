@@ -23,8 +23,8 @@ class Account {
 
     }
 
-    public void getBalance() {
-
+    public double getBalance() {
+        return this.balance;
     }
 
     public void withdrawl() {
