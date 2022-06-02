@@ -21,7 +21,7 @@ class Account {
     }
 
     public double getBalance(double balance) {
-        System.out.println("New balance: $" + balance);
+        System.out.printf("New balance: $%,.2f\n", balance);
         return this.balance;
     }
 }
