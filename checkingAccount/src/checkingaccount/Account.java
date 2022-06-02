@@ -2,26 +2,26 @@ package checkingaccount;
 
 class Account {
 
-    public double balance, fee, amount;
+    public double balance, fee;
 
-    public void setBalance() {
+    public void setBalance(double balance) {
         this.balance = balance;
     }
 
-    public void setFee() {
+    public void setFee(double fee) {
         this.fee = fee;
     }
 
-    public void withdrawl() {
-        amount = (this.balance - this.amount) - fee;
+    public void withdrawl(double amount) {
+        balance = (this.balance - amount) - fee;
     }
 
-    public void deposit() {
-        balance = (this.balance + this.amount) - fee;
-    }
-
-    public double getBalance(double balance) {
-        System.out.printf("New balance: $%,.2f\n", balance);
+    public double getBalance() {
+        System.out.printf("New balance: $%,.2f\n\n", balance);
         return this.balance;
+    }
+
+    public void deposit(double amount) {
+        balance = (balance + amount) - fee;
     }
 }
